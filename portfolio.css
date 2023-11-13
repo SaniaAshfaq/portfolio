@@ -1,0 +1,401 @@
+html body{
+   background-color: rgb(15, 14, 14); 
+   color: white;
+   font-family: 'Concert One', sans-serif;
+   scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+
+}
+
+
+.logoS span{
+    font-size: 2.2rem;
+    color: hotpink;
+}
+.logoS{
+    display: inline;
+}
+.links a{
+    float: left;
+    text-decoration: none;
+    margin : 2rem;
+    color: white;
+}
+.links a:hover{
+    color: hotpink;
+    scale: 1.1;
+}
+
+.btn{
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(227, 2, 148);
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.name{ 
+    display: flex;
+    align-items: center;
+}
+.responsive{
+  height: 3rem;
+  width: 3rem;
+ display: none;
+ /* margin-left: 10%; */
+    
+}
+
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:33rem;
+    /* border: 2px solid white; */
+    /* margin-top: 5%; */
+    scroll-behavior: smooth;
+    padding-top: 0px;
+    /* border: 2px solid white; */
+}
+.info{
+    width: 35rem;
+    height: 15rem;
+    /* border: 2px solid white; */
+}
+.infoName{
+   font-size: 1.5rem;
+}
+.info p{
+    font-size: 20px;
+}
+.job{
+    color: rgb(248, 54, 151);
+    font-size: 2.5rem;
+}
+
+.icoon{
+    font-size: 1.9rem;
+     color: rgb(0, 0, 0);
+    background-color: rgb(255, 252, 253);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-left:2%;
+}
+.icoon:hover{
+    scale: 1.1;
+    color: rgb(248, 54, 151);
+}
+
+.cv{
+    width: 9rem;
+    height: 3rem;
+    background-color: white;
+    color: rgb(227, 2, 148);
+    border: 2px solid rgb(227, 2, 148);
+    border-radius: 20px;
+    margin-top: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+
+}
+.Hire{
+ width: 6rem;
+ height: 3rem;
+ background-color: rgb(227, 2, 148);
+ color: white;
+ border: 2px solid white;
+ border-radius: 20px;
+ margin-top: 1.3rem;
+ cursor: pointer;
+
+}
+.imgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16rem;
+    height: 16rem;
+    /* border: 2px solid white; */
+    border: 5px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px rgb(248, 54, 151);
+    margin-top: 5%;
+}
+
+
+.myimg{
+   border-radius: 50%;
+   height: 14rem;
+   width: 14rem;
+  
+}
+
+.myimg:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 0.4s ease-in;
+    
+}
+/*second portion */
+#about{
+    
+    margin-top: 8%;
+     padding-bottom: 4%;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+}
+.me{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.me img{
+    border-radius: 50%;
+    box-shadow: 5px 10px 20px white;
+}
+.mye h2{
+  font-size: 2.1rem;
+  
+}
+.mye p{
+    font-size: 18px;
+}
+.edu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4%;
+}
+.edu img{
+  height: 15%;
+  width: 15%;
+    /* border: 2px solid white; */
+}
+.edu div{
+  width: 25rem;
+  
+}
+.aboutdiv h2{
+   
+    font-size: 2.1rem;
+}
+.aboutdiv p{
+    font-size: 16px;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.services h1{
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.services h1 span{
+   color: rgb(248, 54, 151);
+}
+.cards
+{
+    display: flex;
+    justify-content: space-evenly;
+   width: 90%;
+   margin-bottom: 4rem;
+   /* gap: 3%; */
+}
+.card{
+    width: 20rem;
+    height: 28rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card:hover{
+    scale: 1.09;
+    transition: scale 1s ease-in-out;
+}
+.card img{
+    width: 100%;
+    height: 10rem;
+    /* border-radius: 50%; */
+    /* border: 5px solid rgb(229, 58, 87); */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+.card div{
+    width: 90%;
+    /* border: 2px solid white; */
+    height: 14rem;
+    text-align: center;
+}
+.read{
+    width: 6rem;
+    height: 2.5rem;
+    color: white;
+    background-color: rgb(227, 2, 148);
+    border-radius: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#projects{
+     border-top: 5px solid grey;
+     border-bottom: 5px solid grey;
+    /* background-color: rgb(255, 255, 255); */
+   
+}
+.proname{
+    padding-top: 3%;
+    font-size: 3.2rem;
+    text-align: center;
+    color: white;
+   
+}
+.proname span{
+    color: rgb(227, 2, 148);
+    
+}
+
+.projdiv{
+    /* height: 25rem; */
+    /* border: 2px solid rgb(255, 255, 255); */
+   /* color: black; */
+    width: 24rem;
+}
+
+.firstproj{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hea{
+    color: rgb(227, 2, 148);
+    /* font-size: 2.3rem; */
+}
+.firstproj img{
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px rgb(227, 2, 148);
+    border: 2px solid white;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+
+}
+
+.footer h1{
+   font-size: 3rem; 
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+.footer h1 span{
+    color: hotpink;
+}
+.form{
+    width: 60%;
+    height: 23rem;
+    /* border: 2px solid white; */
+   text-align: center;
+    
+  
+}
+.input{
+    margin: 10px;
+    width: 40%;
+    height: 2rem;
+    /* background-color: hotpink; */
+    border-radius: 10px;
+    font-size: 20px;
+    border: 3px solid hotpink;
+}
+.textarea{
+    margin-top: 10px;
+    width: 85%;
+    border-radius: 10px;
+    /* background-color: hotpink; */
+    font-size: 18px;
+    border: 3px solid hotpink;
+}
+/* ::placeholder{
+  color: hotpink;
+} */
+.lastbtn{
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(248, 54, 151);
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+.jsClass{
+    width: 85%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+    position: absolute;
+    top: 0;
+    left: -80%;
+    border: 2px solid #ffffff;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8rem;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+    transition: left 1s ease;
+}
+.jslink{
+    margin-top: 20px;
+  text-decoration: none;
+  color:  rgb(227, 2, 148);
+  background-color: white;
+  width:90%;
+  border-radius: 20px;
+  border: 2px solid pink;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  border: 2px solid rgb(227, 2, 148);
+}
+.jslink:hover{
+    background-color: rgb(227, 2, 148);
+    color: white;
+    border: 2px solid white;
+   
+}
+.jsresponsive{
+    width: 5rem;
+    height: 5rem;
+    /* background-color: white; */
+}
+
+
