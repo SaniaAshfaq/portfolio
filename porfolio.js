@@ -35,5 +35,16 @@ link.forEach((event)=>{
    })
 })
     
-})
+});
+let hideproj = document.querySelector(".hided");
+let shoBtn = document.querySelector(".Showmore");
 
+shoBtn.addEventListener("click", function() {
+    if (shoBtn.innerHTML === "Show More") {
+        hideproj.style.display = "block";
+        shoBtn.innerHTML = "Show Less";
+    } else {
+        hideproj.style.display = "none";
+        shoBtn.innerHTML = "Show More";
+    }
+});

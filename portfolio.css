@@ -1,5 +1,5 @@
 html body{
-   background-color: rgb(15, 14, 14); 
+   background-color: rgb(0, 0, 0); 
    color: white;
    font-family: 'Concert One', sans-serif;
    scroll-behavior: smooth;
@@ -25,12 +25,15 @@ body{
 }
 .logoS{
     display: inline;
+   
 }
 .links a{
     float: left;
     text-decoration: none;
     margin : 2rem;
     color: white;
+ 
+   
 }
 .links a:hover{
     color: hotpink;
@@ -86,24 +89,35 @@ body{
     color: rgb(248, 54, 151);
     font-size: 2.5rem;
     animation: cutAndReappear 4s infinite linear;
+    position: relative;
+    overflow: hidden;
 }
-@keyframes cutAndReappear {
-    0% {
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
-      }
-      25% {
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
-      }
-      50% {
-        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-      }
-      75% {
-        clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-      }
-      100% {
-        clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%);
-      }
-  }
+.job::after{
+    content: "";
+     height: 100%;
+      width: 70px;
+    
+    border-left: 2px solid rgb(248, 54, 151);
+    background-color: black;
+    margin-left: 10px;
+    animation: typing 4s steps(20) infinite alternate;
+    position: absolute;
+}
+@keyframes typing {
+    0%{
+       left: 69%;
+    }
+    100%{
+        left: 0%;
+        width: 500px;
+    }
+    
+}
+
+
+
+
+  /* code for icons */
 .icoon{
     font-size: 1.9rem;
      color: rgb(0, 0, 0);
@@ -115,6 +129,7 @@ body{
 .icoon:hover{
     scale: 1.1;
     color: rgb(248, 54, 151);
+    
 }
 
 .cv{
@@ -153,7 +168,9 @@ body{
     margin-top: 5%;
 }
 
-
+.imgdiv:hover{
+    background-color: rgb(207, 0, 104);
+}
 .myimg{
    border-radius: 50%;
    height: 14rem;
@@ -165,61 +182,140 @@ body{
   transform: scale(1.1);
   cursor: pointer;
   transition: transform 0.4s ease-in;
-    
+    transform: skew(-10deg , 5deg);
 }
 /*second portion */
 #about{
     
-    margin-top: 8%;
-     padding-bottom: 4%;
-    border-top: 5px solid grey;
-    border-bottom: 5px solid grey;
-}
-.me{
-    padding-top: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.me img{
-    border-radius: 50%;
-    box-shadow: 5px 10px 20px white;
-}
-.mye h2{
-  font-size: 2.1rem;
-  
-}
-.mye p{
-    font-size: 18px;
-}
-.edu{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-top: 4%;
+     padding-bottom: 4%;
+    /* border-top: 5px solid grey;
+    border-bottom: 5px solid grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.edu img{
-  height: 15%;
-  width: 15%;
-    /* border: 2px solid white; */
+.abouttop{
+    text-align: center;
+    width: 70%;
+    
 }
-.edu div{
-  width: 25rem;
+.aboutHeading{
+padding-top: 2rem;
+font-size: 2.7rem;
+
+
+}
+
+.aboutImg{
+    border-radius: 50%;
+  
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0px 20px rgb(255, 255, 255);
   
 }
-.aboutdiv h2{
+.aboutImg:hover{
+    scale: 1.2;
+    transition: scale 2s;
+    cursor: pointer;
+}
+.education{
+    font-size: 1.7rem;
+    color: rgb(248, 54, 151);
+    -webkit-text-stroke: 1px white; /* Width and color of the stroke */
+-moz-text-stroke: 1px white ;
+}
+ 
+/* skills section will go here */
+
+.skillspart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 2%;
+}
+  .skillsHeading{
+    font-size: 2.9rem;
+
+  }
+
+  .Allcards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 80%;
    
-    font-size: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  .skillCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    height: 150px;
+    width: 200px;
+    border-radius: 10%;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    
+  }
+
+  .skillCard:hover{
+    cursor: pointer;
+    border: 2px solid hotpink;
+    transform: skew(9deg);
+    transition: transform 1s ease-in-out;
+  }
+.skillpercent{
+    background-color: #ffffff;
+    width: 85%;
+    height: 28px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius:10px;
+     color: black;
+
+   
 }
-.aboutdiv p{
-    font-size: 16px;
+.skillCard:hover .skillpercent{
+    border: 2px solid hotpink;
 }
+.skillCard:hover .skillpercent2{
+    border: 2px solid hotpink;
+    background-color: rgb(207, 0, 104);
+}
+.skillpercent2{ 
+    border: 2px solid #ffffff;
+    width: 85%;
+    height: 28px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius:10px;
+
+}
+
+.htmlsvg{
+    width: 50px;
+    height: 50px;
+}
+
+/* services section started from heree */
 .services{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding-top: 3rem;
+   
 }
 .services h1{
     margin-top: 5rem;
@@ -232,19 +328,22 @@ body{
 .cards
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
    width: 90%;
    margin-bottom: 4rem;
+   gap: 20px;
    /* gap: 3%; */
 }
 .card{
     width: 18rem;
-    height: 28rem;
-    border: 2px solid rgb(255, 255, 255);
+   background-color: pink;
+    border: 2px solid rgb(207, 0, 104);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: black;
+
     
 }
 .card:hover{
@@ -276,49 +375,104 @@ body{
     cursor: pointer;
 }
 
-#projects{
-     border-top: 5px solid grey;
-     border-bottom: 5px solid grey;
-    /* background-color: rgb(255, 255, 255); */
-   
-}
-.proname{
-    padding-top: 3%;
-    font-size: 3.2rem;
-    text-align: center;
-    color: white;
-   
-}
-.proname span{
-    color: rgb(227, 2, 148);
-    
-}
 
-.projdiv{
-    /* height: 25rem; */
-    /* border: 2px solid rgb(255, 255, 255); */
-   /* color: black; */
-    width: 24rem;
-}
 
-.firstproj{
+
+   /* project sections css will go here */
+   #projects{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+   }
+   .projHead{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2.7rem;
+   }
+   .projectsInfo{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+   }
+   .projdiv{
+   border-bottom: 2px solid hotpink;
+   border-top: 2px solid hotpink;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+  
+    
+   }
+
+   .hided{
+    display: none;
+  
+   }
+   .projName h4{
+    font-size: 1.5rem;
+
+    font-weight: bold;
+   }
+.projVideo video{
+    width: 300px;
+    height: 200px;
+   
+
+}
+.projBtn{
+
+   padding-top: 12px;
+   padding-bottom: 12px;
+   width: 200px;
+   margin-bottom: 20px;
+   border-radius: 20px;
+   background-color: rgb(207, 0, 104);
+   
+   border-top: 2px solid white;
+   border-left: 2px solid white;
+   color: white;
+   font-weight: bolder;
+   
+}
+.projBtn:hover{
+    cursor: pointer;
+}
+.Showmore{
+   
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255);
+   
+    border-bottom: 2px solid rgb(207, 0, 104);
+    border-right: 2px solid rgb(207, 0, 104);
+    color: rgb(207, 0, 104);
+    font-weight: bolder;
+    
+
+}
+.Showmore:hover{
+    cursor: pointer;
 }
 
-.firstproj img{
-    width: 12rem;
-    height: 12rem;
-    border-radius: 50%;
-    box-shadow: rgba(255, 255, 255, 0.8) 0px 4px 16px, rgba(255, 255, 255, 0.8) 0px 8px 24px, rgba(255, 255, 255, 0.8) 0px 16px 56px;
-    border: 2px solid white;
-}
+
+
+
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+    padding-top: 5%;
 
 }
 
