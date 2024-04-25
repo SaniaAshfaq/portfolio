@@ -342,7 +342,8 @@ font-size: 2.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: rgb(0, 0, 0);
+   
 
     
 }

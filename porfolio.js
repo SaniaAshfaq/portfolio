@@ -1,5 +1,4 @@
 
-
 let responsive = document.querySelector('.responsive');
 let newdiv;
 responsive.addEventListener('click' ,function(){
