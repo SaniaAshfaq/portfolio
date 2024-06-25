@@ -81,10 +81,11 @@
        align-items: flex-start;
        justify-content: center;
        height: 30rem;
+       flex-direction: column-reverse;
        /* border: 2px solid white; */
    }
    .myimg, .imgdiv{
-     display: none;
+     display: block;
    }
    .me{
     flex-direction: column;
@@ -124,17 +125,23 @@
    .projectsInfo{
     display: flex;
     flex-direction: column;
-    width: 90%;
-    
    }
-   .projVideo video{
-    width: 200px;
-    height: 200px;
-   
+   .projectsInfo div{
+    height: 300px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+   }
 
+.first h3 {
+    writing-mode: horizontal-tb; /* Switch to horizontal orientation on short screens */
+    transform: none; /* Reset rotation */
+   
 }
 
-
+.footer{
+    display: flex;
+}
 .projBtn{
 
    

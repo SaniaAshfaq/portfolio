@@ -25,6 +25,9 @@ body{
 }
 .logoS{
     display: inline;
+    font-family: "Sofia", cursive;
+    font-weight: 700;
+    
    
 }
 .links a{
@@ -32,6 +35,8 @@ body{
     text-decoration: none;
     margin : 2rem;
     color: white;
+    font-family: "Sofia", cursive;
+    font-weight: 700;
  
    
 }
@@ -52,6 +57,7 @@ body{
 .name{ 
     display: flex;
     align-items: center;
+   
 }
 .responsive{
   height: 3rem;
@@ -81,6 +87,8 @@ body{
 }
 .infoName{
    font-size: 1.5rem;
+   font-family: "Sofia", cursive;
+   font-weight: 700;
 }
 .info p{
     font-size: 20px;
@@ -155,34 +163,74 @@ body{
  cursor: pointer;
 
 }
-.imgdiv{
+.imgdiv {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 16rem;
-    height: 16rem;
-    /* border: 2px solid white; */
-    border: 5px solid white;
-    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 30% 70% 67% 33% / 44% 44% 56% 56%;
     box-shadow: 0px 0px 25px rgb(248, 54, 151);
-    margin-top: 5%;
+    margin-top: 8%;
+    background: linear-gradient(135deg, 
+        #e10875,  /* Pink */
+        #d746a2,  /* Light Purple */
+        #23bff4);
+
+    color: white;
+    text-shadow: 0 1px 0 #000;
+
+    --border-angle: 0turn; /* For animation */
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 5%,
+        #112 60%,
+        #213 95%
+    );
+
+    border: solid 5px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+    background: 
+        var(--main-bg) padding-box,
+        var(--gradient-border) border-box,
+        var(--main-bg) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 3s linear infinite;
 }
 
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+.imgdiv:hover {
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
 .imgdiv:hover{
-    background-color: rgb(207, 0, 104);
+    color: pink;
 }
 .myimg{
-   border-radius: 50%;
-   height: 14rem;
-   width: 14rem;
+   border-radius: 30% 70% 67% 33% / 44% 20% 56% 56% ;
+   height: 20rem;
+   width: 20rem;
   
 }
 
 .myimg:hover{
-  transform: scale(1.1);
+ 
   cursor: pointer;
-  transition: transform 0.4s ease-in;
-    transform: skew(-10deg , 5deg);
+  
 }
 /*second portion */
 #about{
@@ -203,7 +251,8 @@ body{
 .aboutHeading{
 padding-top: 2rem;
 font-size: 2.7rem;
-
+font-family: "Sofia", cursive;
+font-weight: 700;
 
 }
 
@@ -238,6 +287,8 @@ font-size: 2.7rem;
 }
   .skillsHeading{
     font-size: 2.9rem;
+    font-family: "Sofia", cursive;
+    font-weight: 700;
 
   }
 
@@ -252,19 +303,56 @@ font-size: 2.7rem;
     justify-content: center;
     padding-top: 30px;
   }
-  .skillCard{
+  .skillCard {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid #ffffff;
     height: 150px;
     width: 200px;
     border-radius: 10%;
     padding-top: 10px;
     padding-bottom: 15px;
-    
-  }
+    color: white;
+    text-shadow: 0 1px 0 #000;
+
+    --border-angle: 0turn; /* For animation */
+    --main-bg: conic-gradient(
+        from var(--border-angle),
+        #213,
+        #112 5%,
+        #112 60%,
+        #213 95%
+    );
+
+    border: solid 5px transparent;
+    --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, #f03 99%, transparent);
+
+    background: 
+        var(--main-bg) padding-box,
+        var(--gradient-border) border-box,
+        var(--main-bg) border-box;
+
+    background-position: center center;
+
+    animation: bg-spin 3s linear infinite;
+}
+
+@keyframes bg-spin {
+    to {
+        --border-angle: 1turn;
+    }
+}
+
+.skillCard:hover {
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
 
   .skillCard:hover{
     cursor: pointer;
@@ -321,6 +409,8 @@ font-size: 2.7rem;
     margin-top: 5rem;
     font-size: 3rem;
     text-align: center;
+    font-family: "Sofia", cursive;
+    font-weight: 800;
 }
 .services h1 span{
    color: rgb(248, 54, 151);
@@ -331,41 +421,51 @@ font-size: 2.7rem;
     justify-content: center;
    width: 90%;
    margin-bottom: 4rem;
-   gap: 20px;
+   gap: 40px;
    /* gap: 3%; */
+   color: white;
 }
 .card{
-    width: 18rem;
-   background-color: pink;
-    border: 2px solid rgb(207, 0, 104);
+    color: white;
+    width: 20rem;
+   /* background-color: white; */
+    border: 1px solid rgb(104, 6, 93);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: rgb(0, 0, 0);
-   
-
+     position: relative;
+     transition: transform 1s ease-in-out;
+     background-color: #000;
+   box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
     
 }
 .card:hover{
-    scale: 1.09;
-    transition: scale 1s ease-in-out;
+    transform: scale3d(3);
+    box-shadow: 10px 20px 16px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
-.card img{
-    width: 100%;
-    height: 10rem;
-    /* border-radius: 50%; */
-    /* border: 5px solid rgb(229, 58, 87); */
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+.card h2, p{
+    color: rgb(255, 255, 255);
     
 }
+
+
 .card div{
-    width: 90%;
+    width: 100%;
     /* border: 2px solid white; */
-    height: 14rem;
+    /* height: 14rem; */
     text-align: center;
+   
 }
+.card div img{
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    filter: hue-rotate(90deg);
+}
+
 .read{
     width: 6rem;
     height: 2.5rem;
@@ -385,54 +485,134 @@ font-size: 2.7rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .projHead{
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    font-size: 2.7rem;
-   }
-   .projectsInfo{
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-   }
-   .projdiv{
-   border-bottom: 2px solid hotpink;
-   border-top: 2px solid hotpink;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-  
+    position: relative;
     
    }
 
-   .hided{
-    display: none;
-  
+    
+   .projHead{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 3rem;
+    z-index: 30;
+    font-family: "Sofia", cursive;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
    }
-   .projName h4{
-    font-size: 1.5rem;
+   .projectsInfo{
+    display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(4,auto);
+    grid-gap: 10px;
+    padding: 10px;
+    width:80%;
+    height: 100%;
+    /* border: 2px solid white; */
 
-    font-weight: bold;
+
    }
-.projVideo video{
-    width: 300px;
-    height: 200px;
+   .grid-item {
+    /* border: 2px solid rgb(255, 5, 5); */
+    /* padding: 20px; */
+    border-radius: 10px;
    
+}
+  
+
+   .projectsInfo .first{
+    /* grid-column: span 2; */
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    /* width: 100px; */
+    background: rgb(15, 14, 14);
+    border: 2px solid rgb(5, 5, 71);
+    box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
+
+
+   }
+.first , .second, .third , .fourth , .fifth ,.six, .seven{
+    border: 2px solid rgb(30, 3, 100);
+  
 
 }
+.first h3{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg); /* Optional, to flip text orientation */
+    white-space: wrap;
+    font-family: 'Concert One', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+
+}
+   .second{
+    grid-column: span 3;
+    /* background-image: url('wcore\ thumbnail.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    height: 250px;
+    
+   }
+   .second, .fourth , .fifth , .six , .seven , img{
+    width: 100%;
+    height: 100%;
+   }
+   
+   .fourth{
+    
+    width: 200px;
+    /* background-image: url('bussiness\ site.jfif');
+    background-size: cover;
+    background-repeat: no-repeat; */
+   }
+    .six{
+    grid-column: span 3;
+    height: 300px;
+    width: 600px;
+    /* background-image: url('wwww.png');
+    background-size: cover;
+    background-repeat: no-repeat; */
+
+   }
+   .fifth{
+
+    /* background-image: url('e-commeresite.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    width: 250px;
+    height: 300px;
+   }
+   
+   .seven{
+    grid-column: span 5;
+   
+    /* background-image: url('netflixproj.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center 80%; */
+    height: 300px;
+    
+    
+   }
+
+
+
+
+
+
+
+
+   
 .projBtn{
 
    padding-top: 12px;
    padding-bottom: 12px;
    width: 200px;
    margin-bottom: 20px;
+   margin-top: 20px;
    border-radius: 20px;
    background-color: rgb(207, 0, 104);
    
@@ -445,25 +625,7 @@ font-size: 2.7rem;
 .projBtn:hover{
     cursor: pointer;
 }
-.Showmore{
-   
-    margin-top: 60px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(255, 255, 255);
-   
-    border-bottom: 2px solid rgb(207, 0, 104);
-    border-right: 2px solid rgb(207, 0, 104);
-    color: rgb(207, 0, 104);
-    font-weight: bolder;
-    
 
-}
-.Showmore:hover{
-    cursor: pointer;
-}
 
 
 
@@ -476,11 +638,15 @@ font-size: 2.7rem;
     padding-top: 5%;
 
 }
-
+.footer input{
+    width:84%;
+}
 .footer h1{
    font-size: 3rem; 
    margin-top: 5%;
    margin-bottom: 5%;
+   font-family: "Sofia", cursive;
+   font-weight: 800;
 }
 .footer h1 span{
     color: hotpink;
