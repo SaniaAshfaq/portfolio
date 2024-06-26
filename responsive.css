@@ -126,8 +126,8 @@
     }
     .content{
         /* padding-top: 5%; */
-        padding-top: 20%;
-       align-items: flex-start;
+        padding-top: 30%;
+       align-items: center;
        justify-content: center;
        /* height: 30rem; */
        flex-direction: column-reverse;

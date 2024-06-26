@@ -20,7 +20,7 @@ responsive.addEventListener('click' ,function(){
 
    let jsDiv = newdiv.querySelector('.responsive');
 jsDiv.addEventListener('click',function(){
-    newdiv.style.left = '-100%';
+    newdiv.style.left = '-120%';
     // newdiv.style.display = 'none';
     responsive.style.display = 'block';
     
@@ -28,7 +28,7 @@ jsDiv.addEventListener('click',function(){
 let link = newdiv.querySelectorAll('.jslink');
 link.forEach((event)=>{
    event.addEventListener('click',function(){
-    newdiv.style.left = '-100%';
+    newdiv.style.left = '-120%';
     // newdiv.style.display='none';
     responsive.style.display = 'block';
    })
