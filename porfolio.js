@@ -6,7 +6,7 @@ responsive.addEventListener('click' ,function(){
     console.log('clicked');
   newdiv = document.createElement('div');
   newdiv.classList.add('jsClass');
-  newdiv.innerHTML = ` <ion-icon name="reorder-three" class="responsive jsresponsive"></ion-icon>
+  newdiv.innerHTML = ` <ion-icon name="close-outline" class="responsive jsresponsive"></ion-icon>
   <a href="#mycontent" class="home jslink" >Home</a>
   <a href="#about" class='jslink'>About</a>
   <a href="#services" class='jslink'>services</a>
@@ -46,4 +46,11 @@ shoBtn.addEventListener("click", function() {
         hideproj.style.display = "none";
         shoBtn.innerHTML = "Show More";
     }
+
+
+
+
+    
+
 });
+

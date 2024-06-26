@@ -12,11 +12,18 @@
     }
     .content{
          padding-top: 5%;
-        align-items: flex-start;
-        justify-content: center;
-        height: 30rem;
+        /* align-items: flex-start; */
+        /* justify-content: center; */
+        /* height: 30rem; */
         /* border: 2px solid white; */
+        justify-content: space-between;
     }
+    .myimg, .imgdiv{
+    
+        display: block;
+        width: 150px;
+        height: 150px;
+      }
     .info{
       width: 30rem;
       margin-left: 4%;
@@ -45,6 +52,21 @@
     width: 80%;
     height: 23rem;
    }
+
+   .projectsInfo{
+    display: flex;
+    flex-direction: column;
+   }
+   .projectsInfo  .first{
+    height: 100px;
+   }
+   .projectsInfo div{
+    height: 300px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+   }
+
    .read{
     width: 10rem;
     height: 3.4rem;
@@ -54,7 +76,11 @@
    }
    
    
+   .first h3 {
+    writing-mode: horizontal-tb; /* Switch to horizontal orientation on short screens */
+    transform: none; /* Reset rotation */
    
+}
    
    .form{
     width: 80%;
@@ -62,6 +88,17 @@
    .jsClass{
     display: none;
    }
+
+   .firstInputs{
+    flex-direction: column;
+  }
+  .input{
+      width: 23rem;
+  }
+  
+  .subj{
+      width: 86.5%;
+  }
 }
 
 @media(min-width: 200px) and (max-width: 599px)
@@ -69,23 +106,46 @@
     .responsive{
         display: block;
     }
+
     .links a{
         display: none;
+    
+       
     }
+    .jsClass{
+        height: 100%;
+    }
+
+    .jsClass a{
+        height: 100px;
+    }
+    .jslink
     .navbar{
         justify-content: space-between;
         position: static;
     }
     .content{
-        padding-top: 5%;
+        /* padding-top: 5%; */
+        padding-top: 20%;
        align-items: flex-start;
        justify-content: center;
-       height: 30rem;
+       /* height: 30rem; */
        flex-direction: column-reverse;
        /* border: 2px solid white; */
+       /* border: 2px solid white; */
+   }
+   .info{
+    width: 100%;
+   }
+   .imgdiv{
+    text-align: center;
+    /* margin-top: 100%; */
    }
    .myimg, .imgdiv{
+    
      display: block;
+     width: 200px;
+     height: 200px;
    }
    .me{
     flex-direction: column;
@@ -126,9 +186,12 @@
     display: flex;
     flex-direction: column;
    }
+   .projectsInfo  .first{
+    height: 100px;
+   }
    .projectsInfo div{
     height: 300px;
-    width: 250px;
+    width: 90%;
     align-items: center;
     justify-content: center;
    }
@@ -142,14 +205,27 @@
 .footer{
     display: flex;
 }
-.projBtn{
-
-   
-    width: 100px;
-}
     
+
+.projShow .btn-container .projbutton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 20px;
+}
    .form{
     width: 100%;
    }
-  
+   .footer h1{
+    font-size: 2em;
+   }
+   .firstInputs{
+  flex-direction: column;
+}
+.input{
+    width: 15rem;
+}
+
+.subj{
+    width: 86.5%;
+}
 }

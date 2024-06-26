@@ -15,6 +15,7 @@ body{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 20;
 
 }
 
@@ -73,16 +74,18 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:33rem;
+    
+    /* height:33rem; */
     /* border: 2px solid white; */
     /* margin-top: 5%; */
     scroll-behavior: smooth;
-    padding-top: 0px;
+    padding-top:8%;
+    padding-bottom: 10%;
     /* border: 2px solid white; */
 }
 .info{
     width: 35rem;
-    height: 15rem;
+    /* height: 15rem; */
     /* border: 2px solid white; */
 }
 .infoName{
@@ -171,7 +174,7 @@ body{
     height: 20rem;
     border-radius: 30% 70% 67% 33% / 44% 44% 56% 56%;
     box-shadow: 0px 0px 25px rgb(248, 54, 151);
-    margin-top: 8%;
+    /* margin-top: 8%; */
     background: linear-gradient(135deg, 
         #e10875,  /* Pink */
         #d746a2,  /* Light Purple */
@@ -530,11 +533,13 @@ font-weight: 700;
     background: rgb(15, 14, 14);
     border: 2px solid rgb(5, 5, 71);
     box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
+    font-family: monospace;
 
 
    }
 .first , .second, .third , .fourth , .fifth ,.six, .seven{
-    border: 2px solid rgb(30, 3, 100);
+    /* border: 2px solid rgb(30, 3, 100); */
+    position: relative;
   
 
 }
@@ -558,6 +563,7 @@ font-weight: 700;
    .second, .fourth , .fifth , .six , .seven , img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
    }
    
    .fourth{
@@ -598,33 +604,182 @@ font-weight: 700;
     
    }
 
+/* making mmy projects section good by adding hovering effect */
 
-
-
-
-
-
-
+.projShow
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 18, 0.8);
+    top: 0%;
+    display: none;
    
-.projBtn{
+    z-index: -40;
+  
 
-   padding-top: 12px;
-   padding-bottom: 12px;
-   width: 200px;
-   margin-bottom: 20px;
-   margin-top: 20px;
-   border-radius: 20px;
-   background-color: rgb(207, 0, 104);
-   
-   border-top: 2px solid white;
-   border-left: 2px solid white;
-   color: white;
-   font-weight: bolder;
-   
+  
 }
-.projBtn:hover{
+
+
+.second:hover .projShow,
+.fourth:hover .projShow,
+.fifth:hover .projShow,
+.six:hover .projShow,
+.seven:hover .projShow {
+  display: flex;
+  cursor: pointer;
+  z-index: 0;
+  justify-content: end;
+  flex-direction: column;
+  transition: display 2s ease-in-out;
+  
+}
+
+.projShow h1{
+    color : white;
+    margin-left: 20px;
+    font-family: monospace;
+}
+
+/* //styling the btton? */
+.projShow .btn-container {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     cursor: pointer;
-}
+  }
+  
+  .projShow .btn-container .projbutton {
+    cursor: pointer;
+    position: relative;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    color: var(--color, #1e9bff); /* Default text color */
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    text-shadow: 0 0 15px var(--color, #1e9bff); /* Default text shadow color */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    z-index: 1;
+    background: transparent;
+    overflow: hidden;
+    display: inline-block; /* Make anchor behave like a button */
+  }
+  
+  .projShow .btn-container .projbutton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color, #1e9bff); /* Default background color */
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .projShow .btn-container .projbutton:hover::before {
+    transform: scale(1);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--color, #1e9bff),
+                0 0 30px var(--color, #1e9bff),
+                0 0 60px var(--color, #1e9bff);
+  }
+  
+  .projShow .btn-container .projbutton span {
+    position: absolute;
+    background: var(--color, #1e9bff);
+    pointer-events: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--color, #1e9bff),
+                0 0 20px var(--color, #1e9bff),
+                0 0 30px var(--color, #1e9bff),
+                0 0 50px var(--color, #1e9bff),
+                0 0 100px var(--color, #1e9bff);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+  }
+  
+  .projShow .btn-container .projbutton:hover span {
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(1),
+  .projShow .btn-container .projbutton span:nth-child(3) {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(1),
+  .projShow .btn-container .projbutton:hover span:nth-child(3) {
+    transform: translateX(0);
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(2),
+  .projShow .btn-container .projbutton span:nth-child(4) {
+    width: 4px;
+    height: 40px;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(2),
+  .projShow .btn-container .projbutton:hover span:nth-child(4) {
+    transform: translateY(0);
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(1) {
+    top: calc(50% - 2px);
+    left: -50px;
+    transform-origin: left;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(1) {
+    left: 50%;
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(3) {
+    top: calc(50% - 2px);
+    right: -50px;
+    transform-origin: right;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(3) {
+    right: 50%;
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50px;
+    transform-origin: top;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(2) {
+    top: 50%;
+  }
+  
+  .projShow .btn-container .projbutton span:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50px;
+    transform-origin: bottom;
+  }
+  
+  .projShow .btn-container .projbutton:hover span:nth-child(4) {
+    bottom: 50%;
+  }
+  
+  /* Specific styles for changing text color */
+  .projShow .btn-container .projbutton:hover {
+    color: #fff; /* Change text color on hover */
+    text-shadow: 0 0 15px #fff; /* Change text shadow color on hover */
+  }
+ 
+/* .projBtn:hover{
+    cursor: pointer;
+} */
 
 
 
@@ -638,9 +793,9 @@ font-weight: 700;
     padding-top: 5%;
 
 }
-.footer input{
+/* .footer input{
     width:84%;
-}
+} */
 .footer h1{
    font-size: 3rem; 
    margin-top: 5%;
@@ -659,14 +814,24 @@ font-weight: 700;
     
   
 }
+.firstInputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border: 2px solid white; */
+    /* padding-right: 20px; */
+}
 .input{
     margin: 10px;
-    width: 40%;
+    /* width: 50%; */
+    width: 20rem;
     height: 2rem;
     /* background-color: hotpink; */
     border-radius: 10px;
     font-size: 20px;
     border: 3px solid hotpink;
+    /* display: inline-block; */
 }
 .subj{
     width: 85%;
@@ -699,41 +864,36 @@ font-weight: 700;
     cursor: pointer;
 }
 .jsClass{
-    width: 85%;
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0,0.9);
     position: absolute;
     top: 0;
-    left: -80%;
-    border: 2px solid #ffffff;
+    left: -100%;
+    /* border: 2px solid #ffffff; */
     opacity: 1;
     display: flex;
     flex-direction: column;
     font-size: 2.8rem;
     color: white;
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
     transition: left 1s ease;
+    text-align: center;
 }
 .jslink{
-    margin-top: 20px;
+    margin-top: 0px;
   text-decoration: none;
-  color:  rgb(227, 2, 148);
-  background-color: white;
+  color: white;
+  /* color:  rgb(227, 2, 148); */
+  /* background-color: white; */
   width:90%;
-  border-radius: 20px;
-  border: 2px solid pink;
-  padding: 20px;
-  text-align: center;
-  font-weight: 500;
-  border: 2px solid rgb(227, 2, 148);
+ 
+  font-weight: 700;
+  /* border: 2px solid rgb(227, 2, 148); */
+  font-size:20px;
 }
-.jslink:hover{
-    background-color: rgb(227, 2, 148);
-    color: white;
-    border: 2px solid white;
-   
-}
+
 .jsresponsive{
     width: 5rem;
     height: 5rem;
