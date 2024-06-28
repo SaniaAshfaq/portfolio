@@ -271,4 +271,14 @@
 .Education{
     display: none;
 }
+
+
+.footer-icons
+{
+    margin-top: 10%;
+   
+    gap: 10px;
+}
+
+
 }
