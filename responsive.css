@@ -108,15 +108,17 @@
 
     @keyframes typing {
         0%{
-           left: 60%;
+           left: 55%;
         }
         100%{
             left: 0%;
-            width: 150px;
+            width: 180px;
         }
         
     }
-
+    .name{
+        margin-left: -10%;
+    }
     .abouttop{
       
         width: 90%;
