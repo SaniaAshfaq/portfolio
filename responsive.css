@@ -106,6 +106,17 @@
 @media(min-width: 200px) and (max-width: 599px)
 {
 
+    @keyframes typing {
+        0%{
+           left: 64%;
+        }
+        100%{
+            left: 0%;
+            width: 200px;
+        }
+        
+    }
+
     .abouttop{
       
         width: 90%;
