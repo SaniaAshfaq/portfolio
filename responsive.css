@@ -108,11 +108,11 @@
 
     @keyframes typing {
         0%{
-           left: 64%;
+           left: 60%;
         }
         100%{
             left: 0%;
-            width: 200px;
+            width: 150px;
         }
         
     }
