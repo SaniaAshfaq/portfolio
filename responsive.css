@@ -156,6 +156,8 @@
        /* border: 2px solid white; */
        /* border: 2px solid white; */
    }
+
+   
    .info{
     width: 100%;
    }
@@ -220,6 +222,7 @@
    .projectsInfo{
     display: flex;
     flex-direction: column;
+    width: 100%;
    }
    .projectsInfo  .first{
     
@@ -227,7 +230,7 @@
    }
    .projectsInfo div{
     height: 300px;
-    width: 90%;
+    width: 95%;
     align-items: center;
     justify-content: center;
    }
