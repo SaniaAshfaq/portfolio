@@ -207,7 +207,8 @@
     flex-direction: column;
    }
    .projectsInfo  .first{
-    height: 100px;
+    
+    display: none;
    }
    .projectsInfo div{
     height: 300px;
