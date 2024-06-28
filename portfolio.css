@@ -841,6 +841,7 @@ color: rgb(248, 54, 151);
     align-items: center; 
     justify-content: center; 
     padding-top: 5%;
+    width: 100%;
 
 }
 /* .footer input{
@@ -874,22 +875,23 @@ color: rgb(248, 54, 151);
     /* padding-right: 20px; */
 }
 .input{
+    padding: 8px;
     margin: 10px;
     /* width: 50%; */
-    width: 20rem;
-    height: 2rem;
+      width: 100%;
     /* background-color: hotpink; */
     border-radius: 10px;
     font-size: 20px;
     border: 3px solid hotpink;
     /* display: inline-block; */
+    
 }
 .subj{
-    width: 85%;
+    width: 95%;
 }
 .textarea{
     margin-top: 10px;
-    width: 85%;
+    width: 97%;
     border-radius: 10px;
     /* background-color: hotpink; */
     font-size: 18px;
@@ -909,7 +911,7 @@ color: rgb(248, 54, 151);
     color: white;
     font-size: 18px;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 3%;
     margin-top: 2%;
     cursor: pointer;
@@ -949,6 +951,13 @@ color: rgb(248, 54, 151);
     width: 5rem;
     height: 5rem;
     /* background-color: white; */
+}
+
+.footer-icons
+{
+    margin-top: 5%;
+    display: flex;
+    gap: 10px;
 }
 
 
