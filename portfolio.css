@@ -27,6 +27,7 @@ body{
 .logoS{
     display: inline;
     font-family: "Sofia", cursive;
+    /* font-family: monospace; */
     font-weight: 700;
     
    
@@ -35,9 +36,12 @@ body{
     float: left;
     text-decoration: none;
     margin : 2rem;
-    color: white;
-    font-family: "Sofia", cursive;
+    color: rgb(252, 252, 252);
+    /* font-family: "Sofia", cursive; */
+    font-family: monospace;
     font-weight: 700;
+    font-size: 16px;
+    
  
    
 }
@@ -52,7 +56,7 @@ body{
     background-color: rgb(227, 2, 148);
     color: white;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
 }
 .name{ 
@@ -61,11 +65,12 @@ body{
    
 }
 .responsive{
-  /* height: 3rem; */
-  /* width: 3rem; */
+  height: 2rem;
+  width: 2rem;
  display: none;
- /* margin-left: 10%; */
+ margin-left: -20%;
  z-index: 50;
+
     
 }
 
@@ -92,6 +97,7 @@ body{
 .infoName{
    font-size: 1.5rem;
    font-family: "Sofia", cursive;
+   /* font-family: monospace; */
    font-weight: 700;
 }
 .info p{
@@ -132,8 +138,8 @@ body{
   /* code for icons */
 .icoon{
     font-size: 1.9rem;
-     color: rgb(0, 0, 0);
-    background-color: rgb(255, 252, 253);
+     color: rgb(248, 54, 151);
+    background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 50%;
     margin-left:2%;
@@ -150,11 +156,18 @@ body{
     background-color: white;
     color: rgb(227, 2, 148);
     border: 2px solid rgb(227, 2, 148);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 1.3rem;
     font-weight: bolder;
     cursor: pointer;
+    
 
+}
+
+.cv:hover{
+    background-color: rgb(227, 2, 148);
+    color: white;
+    border: 2px solid white;
 }
 .Hire{
  width: 6rem;
@@ -162,10 +175,17 @@ body{
  background-color: rgb(227, 2, 148);
  color: white;
  border: 2px solid white;
- border-radius: 20px;
+ border-radius: 10px;
  margin-top: 1.3rem;
  cursor: pointer;
+ font-weight: bolder;
 
+}
+.Hire:hover{
+    background-color: white;
+    color: rgb(227, 2, 148);
+    border: 2px solid hotpink;
+    font-weight: bolder;
 }
 .imgdiv {
     display: flex;
@@ -248,36 +268,54 @@ body{
     justify-content: center;
 }
 .abouttop{
-    text-align: center;
+    /* text-align: center; */
     width: 70%;
+    /* text-align: center; */
     
 }
 .aboutHeading{
 padding-top: 2rem;
 font-size: 2.7rem;
-font-family: "Sofia", cursive;
-font-weight: 700;
+/* font-family: "Sofia", cursive; */
+font-family: monospace;
+font-weight: 900;
+color: rgb(248, 54, 151);
 
 }
-
+.aboutsec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-left{
+    width: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bolder;
+}
 .aboutImg{
-    border-radius: 50%;
+    /* border-radius: 50%; */
   
-  height: 50px;
-  width: 50px;
+  height: 200px;
+  width: 200px;
   box-shadow: 0 0px 20px rgb(255, 255, 255);
+  margin-right: 10%;
+  transition: scale 2s ease-in-out linear;
   
 }
 .aboutImg:hover{
-    scale: 1.2;
-    transition: scale 2s;
+    position: relative;
+   bottom: 5px;;
     cursor: pointer;
+    transform: bottom 2s ease  2s;
 }
-.education{
-    font-size: 1.7rem;
-    color: rgb(248, 54, 151);
-    -webkit-text-stroke: 1px white; /* Width and color of the stroke */
--moz-text-stroke: 1px white ;
+.Education{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: bolder;
+    
 }
  
 /* skills section will go here */
@@ -291,8 +329,11 @@ font-weight: 700;
 }
   .skillsHeading{
     font-size: 2.9rem;
-    font-family: "Sofia", cursive;
-    font-weight: 700;
+    /* font-family: "Sofia", cursive; */
+    font-family: monospace;
+    font-weight: 800;
+    color: rgb(248, 54, 151);
+
 
   }
 
@@ -412,8 +453,9 @@ font-weight: 700;
 .services h1{
     margin-top: 5rem;
     font-size: 3rem;
-    text-align: center;
-    font-family: "Sofia", cursive;
+    /* text-align: center; */
+    /* font-family: "Sofia", cursive; */
+    font-family: monospace;
     font-weight: 800;
 }
 .services h1 span{
@@ -428,21 +470,24 @@ font-weight: 700;
    gap: 40px;
    /* gap: 3%; */
    color: white;
+   flex-wrap: wrap;
 }
 .card{
     color: white;
     width: 20rem;
    /* background-color: white; */
-    border: 1px solid rgb(104, 6, 93);
+    /* border: 1px solid rgb(104, 6, 93); */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* justify-content: baseline; */
+    /* align-items: center; */
     color: rgb(0, 0, 0);
      position: relative;
      transition: transform 1s ease-in-out;
-     background-color: #000;
+     background-color: #1a1919;
    box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
+   padding: 10px;
     
 }
 .card:hover{
@@ -450,24 +495,42 @@ font-weight: 700;
     box-shadow: 10px 20px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
-.card h2, p{
+.card h2{
     color: rgb(255, 255, 255);
+    margin-left: 10px;
     
 }
 
 
 .card div{
     width: 100%;
+    display: flex;
     /* border: 2px solid white; */
     /* height: 14rem; */
-    text-align: center;
+    /* text-align: center; */
+    justify-content:start;
    
 }
-.card div img{
-    width: 100%;
-    border-radius: 20px;
-    height: 200px;
-    filter: hue-rotate(90deg);
+.card div span{
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #b20781;
+    border-radius: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  
+}
+.card div ion-icon{
+   
+    width: 40px;
+    height: 40px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 10px;
+  
+    font-weight: bolder;
 }
 
 .read{
@@ -496,10 +559,11 @@ font-weight: 700;
     
    .projHead{
     padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
     font-size: 3rem;
     z-index: 30;
-    font-family: "Sofia", cursive;
+    /* font-family: "Sofia", cursive; */
+    font-family: monospace;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -520,11 +584,15 @@ font-weight: 700;
     /* border: 2px solid rgb(255, 5, 5); */
     /* padding: 20px; */
     border-radius: 10px;
+
    
 }
   
 
    .projectsInfo .first{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
     /* grid-column: span 2; */
     grid-row: span 2;
     display: flex;
@@ -532,7 +600,8 @@ font-weight: 700;
      justify-content: center;
     /* width: 100px; */
     background: rgb(15, 14, 14);
-    border: 2px solid rgb(5, 5, 71);
+    color: rgb(39, 4, 121);
+    
     box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
     font-family: monospace;
 
@@ -541,23 +610,13 @@ font-weight: 700;
 .first , .second, .third , .fourth , .fifth ,.six, .seven{
     /* border: 2px solid rgb(30, 3, 100); */
     position: relative;
-  
+    border: 2px solid rgb(1, 5, 40);
 
 }
-.first h3{
-    writing-mode: vertical-rl;
-    transform: rotate(180deg); /* Optional, to flip text orientation */
-    white-space: wrap;
-    font-family: 'Concert One', sans-serif;
-    font-weight: bolder;
-    text-align: center;
 
-}
    .second{
     grid-column: span 3;
-    /* background-image: url('wcore\ thumbnail.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
+  
     height: 250px;
     
    }
@@ -570,36 +629,25 @@ font-weight: 700;
    .fourth{
     
     width: 200px;
-    /* background-image: url('bussiness\ site.jfif');
-    background-size: cover;
-    background-repeat: no-repeat; */
+   
    }
     .six{
     grid-column: span 3;
     height: 300px;
     width: 600px;
-    /* background-image: url('wwww.png');
-    background-size: cover;
-    background-repeat: no-repeat; */
+ 
 
    }
    .fifth{
 
-    /* background-image: url('e-commeresite.jfif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
+   
+    background-position: center center; 
     width: 250px;
     height: 300px;
    }
    
    .seven{
     grid-column: span 5;
-   
-    /* background-image: url('netflixproj.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:  center 80%; */
     height: 300px;
     
     
@@ -801,7 +849,8 @@ font-weight: 700;
    font-size: 3rem; 
    margin-top: 5%;
    margin-bottom: 5%;
-   font-family: "Sofia", cursive;
+   /* font-family: "Sofia", cursive; */
+   font-family: monospace;
    font-weight: 800;
 }
 .footer h1 span{
@@ -865,7 +914,7 @@ font-weight: 700;
     cursor: pointer;
 }
 .jsClass{
-    width: 100%;
+    width: 80%;
     height: 100vh;
     background-color: rgba(0, 0, 0,0.9);
     position: absolute;
