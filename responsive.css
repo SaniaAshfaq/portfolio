@@ -253,10 +253,10 @@
     font-size: 20px;
 }
    .form{
-    width: 100%;
+    width: 90%;
    }
    .footer h1{
-    font-size: 2em;
+    font-size: 3rem;
    }
    .firstInputs{
   flex-direction: column;
