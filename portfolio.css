@@ -601,7 +601,7 @@ color: rgb(248, 54, 151);
      justify-content: center;
     /* width: 100px; */
     background: rgb(15, 14, 14);
-    color: rgb(39, 4, 121);
+    color: rgb(253, 21, 168);
     
     box-shadow: rgba(233, 233, 240, 0.25) 0px 50px 100px -20px, rgba(240, 234, 234, 0.3) 0px 30px 60px -30px, rgba(254, 255, 255, 0.35) 0px -2px 6px 0px inset;
     font-family: monospace;
@@ -859,26 +859,26 @@ color: rgb(248, 54, 151);
     color: hotpink;
 }
 .form{
-    width: 60%;
+    width: 50%;
     height: 23rem;
     /* border: 2px solid white; */
    text-align: center;
     
+  margin-bottom: 5rem;
   
 }
 .firstInputs{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    /* border: 2px solid white; */
-    /* padding-right: 20px; */
+    flex-direction: column;
+
 }
 .input{
     padding: 8px;
     margin: 10px;
     /* width: 50%; */
-      width: 100%;
+      width: 95%;
     /* background-color: hotpink; */
     border-radius: 10px;
     font-size: 20px;
@@ -886,9 +886,7 @@ color: rgb(248, 54, 151);
     /* display: inline-block; */
     
 }
-.subj{
-    width: 95%;
-}
+
 .textarea{
     margin-top: 10px;
     width: 97%;
@@ -958,6 +956,35 @@ color: rgb(248, 54, 151);
     margin-top: 5%;
     display: flex;
     gap: 10px;
+    height: 30px;
+    /* width: 100%; */
+    /* border: 2px solid white; */
+  
+}
+.dotCont {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0px;
 }
 
+.dots {
+    width: 1.3rem;
+    aspect-ratio: 1;
+    background-color: #b20781;
+    font-weight: bolder;
+    border-radius: 50%;
+    --_g: no-repeat radial-gradient(circle closest-side, #b20781 90%, #0000);
+    background:
+        var(--_g) 0%   50%,
+        var(--_g) 50%  50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100% / 3) 50%;
+    animation: l3 1s infinite linear;
+}
 
+@keyframes l3 {
+    20% { background-position: 0% 0%, 50% 50%, 100% 50%; }
+    40% { background-position: 0% 100%, 50% 0%, 100% 50%; }
+    60% { background-position: 0% 50%, 50% 100%, 100% 0%; }
+    80% { background-position: 0% 50%, 50% 50%, 100% 100%; }
+}
