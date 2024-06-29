@@ -54,7 +54,7 @@
     width: 90%;
     height: 23rem;
    }
-
+/* 
    .projectsInfo{
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
     width: 90%;
     align-items: center;
     justify-content: center;
-   }
+   } */
 
    .read{
     width: 10rem;
@@ -230,7 +230,7 @@
    }
    .projectsInfo div{
     height: 300px;
-    width: 95%;
+    width: 90%;
     align-items: center;
     justify-content: center;
    }
@@ -261,13 +261,9 @@
    .firstInputs{
   flex-direction: column;
 }
-.input{
-    width: 15rem;
-}
 
-.subj{
-    width: 86.5%;
-}
+
+
 .Education{
     display: none;
 }
